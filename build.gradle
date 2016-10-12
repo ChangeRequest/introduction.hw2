@@ -1,0 +1,9 @@
+group 'school.lemon.changerequest.java'
+version '1.0-SNAPSHOT'
+
+
+apply from: 'https://raw.githubusercontent.com/ChangeRequest/gradle_common/master/commonModule.gradle'
+apply from: 'https://raw.githubusercontent.com/ChangeRequest/gradle_common/master/javaModule.gradle'
+apply from: 'https://raw.githubusercontent.com/ChangeRequest/gradle_common/master/testModule.gradle'
+apply from: 'https://raw.githubusercontent.com/ChangeRequest/gradle_common/master/idea.gradle'
+apply from: 'https://raw.githubusercontent.com/ChangeRequest/gradle_common/master/eclipse.gradle'
