@@ -4,9 +4,9 @@ This project is a ready-to use boilerplate for "It's not a bug, It's a feature" 
 
 #### How-to use
 
-1. `git clone https://github.com/ChangeRequest/boilerplate-project.git hw2`
+1. `git clone https://github.com/ChangeRequest/boilerplate-project.git name_of_new_project`
 2. `git remote remove origin`
-3. `git remote add origin https://github.com/new_repo/repo_name.git`
+3. `git remote add origin https://github.com/new_repo/name_of_new_project.git`
 4. Update `README.MD` to match newly created repository.
 5. Update Author name in `LICENSE` (if needed)
 6. Continue working in your new ready-to-use repository.
