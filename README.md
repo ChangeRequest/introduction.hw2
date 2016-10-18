@@ -95,3 +95,16 @@ evenOdd([1, 0, 1, 0, 0, 1, 1]) → [0, 0, 0, 1, 1, 1, 1]
 evenOdd([3, 3, 2]) → [2, 3, 3]
 evenOdd([2, 2, 2]) → [2, 2, 2]
 ```
+
+#### 9. Extract data from URL
+Parse given URL and extract `scheme`, `host` and `port`. Return an array with extracted data
+in following order: `['scheme', 'host', 'port']`.
+
+If any of returning parameters could not be identified - return empty string for that parameter.
+
+##### Examples
+```
+extractData("http://www.trarara.com/posts) -> ["http","www.tratata.com",""]
+extractData("ftp://example.com:20) -> ["ftp","example.com","20"]
+extractData("www.example.com) -> ["","www.example.com",""]
+```
