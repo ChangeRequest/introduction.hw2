@@ -108,3 +108,14 @@ extractData("http://www.trarara.com/posts) -> ["http","www.tratata.com",""]
 extractData("ftp://example.com:20) -> ["ftp","example.com","20"]
 extractData("www.example.com) -> ["","www.example.com",""]
 ```
+
+#### 10. Trim whitespaces from start and end of line
+Return given text, without leading and trailing whitespaces in each line. 
+Be sure not to remove whitespaces inside sentences.
+
+##### Examples
+```
+trim("      Text is     here.     ") -> "Text is     here."
+trim("") -> ""
+trim("Text") -> "Text"
+```
