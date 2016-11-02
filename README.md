@@ -1,7 +1,7 @@
-Home work 2 tasks.
------------------------
-
-#### 1. Make tags
+Introduction. Home Work 2
+=============
+1\. Make tags
+-------------
 The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. 
 In this example, the "i" tag makes <i> and </i> which surround the word "Yay". 
 Given tag and word strings, create the HTML string with tags around the word, 
@@ -12,7 +12,8 @@ e.g.: `<i>Yay</i>`
 makeTags(";","Text 2") -> "<;>Text 2</;>"
 ```
 
-#### 2. firstTwo 
+2\. firstTwo
+-------------
 Given a string, return the string made of its first two chars, so the String "Hello" yields "He". 
 If the string is shorter than length 2, return whatever there is, 
 so "X" yields "X", and the empty string "" yields the empty string "".
@@ -24,7 +25,8 @@ firstTwo("abcdefg") → "ab"
 firstTwo("ab") → "ab"
 ```
 
-#### 3. comboString
+3\. comboString
+-------------
 Given 2 strings, a and b, return a string of the form short+long+short, 
 with the shorter string on the outside and the longer string on the inside. 
 The strings will not be the same length, but they may be empty (length 0).
@@ -36,7 +38,8 @@ comboString("hi", "Hello") → "hiHellohi"
 comboString("aaa", "b") → "baaab"
 ```
 
-#### 4. improved charAt
+4\. improved charAt
+-------------
 Given a string and an index, return char of string at the given index position.
 
 If index is negative - start from the end of string.
@@ -53,7 +56,8 @@ charAt("Hello", -6) -> "o"
 charAt("Hello", 6) -> "e"
 ```
 
-#### 5. commonEnd 
+5\. commonEnd
+-------------
 Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. 
 Both arrays will be length 1 or more.
 
@@ -64,7 +68,8 @@ commonEnd([1, 2, 3], [7, 3, 2]) → false
 commonEnd([1, 2, 3], [1, 3]) → true
 ```
 
-#### 6. reverse
+6\. reverse
+-------------
 Given an array of ints, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 
 ##### Examples
@@ -74,7 +79,8 @@ reverse([5, 11, 9]) → [9, 11, 5]
 reverse([7, 0, 0, 1]) → [0, 0, 7, 1]
 ```
 
-#### 7. countEvens
+7\. countEvens
+-------------
 Return the number of even ints in the given array.
 
 ##### Examples
@@ -84,7 +90,8 @@ countEvens([2, 2, 0]) → 3
 countEvens([1, 3, -5]) → 0
 ```
 
-#### 8. evenOdd
+8\. evenOdd
+-------------
 Return an array that contains the exact same numbers as the given array, 
 but rearranged so that all the even numbers come before all the odd numbers. 
 Other than that, the numbers can be in any order. 
