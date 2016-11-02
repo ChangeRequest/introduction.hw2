@@ -1,8 +1,7 @@
-package school.lemon.changerequest.java.hw2
+package school.lemon.changerequest.java.introduction.hw2
 
 import spock.lang.Specification
 import spock.lang.Unroll
-
 
 class Task10Specification extends Specification {
     @Unroll

@@ -1,4 +1,4 @@
-package school.lemon.changerequest.java.hw2;
+package school.lemon.changerequest.java.introduction.hw2;
 
 public class Task9 {
     public static String[] extractData(String URL) {
