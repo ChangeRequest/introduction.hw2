@@ -77,7 +77,7 @@ Given an array of ints, return a new array with the elements in reverse order, s
 ```
 reverse([1, 2, 3]) → [3, 2, 1]
 reverse([5, 11, 9]) → [9, 11, 5]
-reverse([7, 0, 0, 1]) → [0, 0, 7, 1]
+reverse([7, 0, 0, 1]) → [1, 0, 0, 7]
 ```
 
 7\. countEvens
