@@ -58,14 +58,15 @@ charAt("Hello", 6) -> "e"
 
 5\. commonEnd
 -------------
-Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. 
-Both arrays will be length 1 or more.
+Given 2 arrays of ints, a and b, return true if their first or last elements are same. 
+Both arrays will have 1 or more elements.
 
 ##### Examples
 ```
 commonEnd([1, 2, 3], [7, 3]) → true
 commonEnd([1, 2, 3], [7, 3, 2]) → false
 commonEnd([1, 2, 3], [1, 3]) → true
+commonEnd([3,4,5], [1,2,3]) → true
 ```
 
 6\. reverse
