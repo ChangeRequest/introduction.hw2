@@ -15,7 +15,10 @@ class Task9Specification extends Specification {
         "file://localhost:4040/zip_file"                              || ["file", "localhost", "4040"]
         "https://s3cur3-server.com:9999/"                             || ["https", "s3cur3-server.com", "9999"]
         "market://search/angry%20birds"                               || ["market", "search", ""]
+        "www.example.com"                                             || ["", "www.example.com", ""]
+        "www.example.com:8080/test"                                   || ["", "www.example.com", "8080"]
         ""                                                            || ["", "", ""]
+        null                                                          || ["", "", ""]
     }
 
 }
