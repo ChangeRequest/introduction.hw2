@@ -123,6 +123,8 @@ extractData("www.example.com) -> ["","www.example.com",""]
 Return given text, without leading and trailing whitespaces in each line. 
 Be sure not to remove whitespaces inside sentences.
 
+Do not use String.trim() method. Implement your own solution based on Regexp.
+
 ##### Examples
 ```
 trim("      Text is     here.     ") -> "Text is     here."

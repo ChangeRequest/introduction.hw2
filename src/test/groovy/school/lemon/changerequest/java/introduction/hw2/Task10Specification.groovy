@@ -14,5 +14,8 @@ class Task10Specification extends Specification {
         "\t\tThis is text with tabulations\t    .\t \t \t"                                              || "This is text with tabulations\t    ."
         " Very long text.  Very long text.  Very long text. \t Very long text. Very long text.        " || "Very long text.  Very long text.  Very long text. \t Very long text. Very long text."
         "Text, where nothing should be trimmed"                                                         || "Text, where nothing should be trimmed"
+        null                                                                                            || null
+        "                "                                                                              || ""
+        "  \t  \t  \t  \t  "                                                                            || ""
     }
 }
