@@ -82,7 +82,7 @@ reverse([7, 0, 0, 1]) → [1, 0, 0, 7]
 
 7\. countEvens
 -------------
-Return the number of even ints in the given array.
+Return the number of even ints in the given array. (`0` is also even)
 
 ##### Examples
 ```
