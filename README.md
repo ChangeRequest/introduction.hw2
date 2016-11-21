@@ -1,5 +1,7 @@
 Introduction. Home Work 2
 =============
+
+[![Join the chat at https://gitter.im/changerequest/introduction.hw2](https://badges.gitter.im/changerequest/introduction.hw2.svg)](https://gitter.im/changerequest/introduction.hw2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 1\. Make tags
 -------------
 The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. 
