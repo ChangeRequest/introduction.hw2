@@ -3,6 +3,14 @@ package school.lemon.changerequest.java.introduction.hw2;
 
 public class Task3 {
     public static String comboString(String s1, String s2) {
-        return "";
+        if (s1 == null) {
+            return null + s2 + null;
+        } else if (s2 == null) {
+            return null + s1 + null;
+        }
+        if (s1.length() > s2.length()) {
+            return s2 + s1 + s2;
+        }
+        return s1 + s2 + s1;
     }
 }
