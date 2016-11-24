@@ -1,10 +1,6 @@
 package school.lemon.changerequest.java.introduction.hw2;
 
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Task2 {
     public static String firstTwo(String s) {
