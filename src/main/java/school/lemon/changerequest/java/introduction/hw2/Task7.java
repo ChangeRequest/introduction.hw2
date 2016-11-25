@@ -6,7 +6,8 @@ public class Task7 {
         if(arr == null)
             return 0;
         for (int anArr : arr) {
-            if (anArr % 2 == 0)
+            boolean b = anArr % 2 == 0;
+            if (b)
                 count++;
 
         }
