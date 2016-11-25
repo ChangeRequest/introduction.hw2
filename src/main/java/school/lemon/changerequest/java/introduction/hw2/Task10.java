@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Task10 {
     public static String trim(String text) {
-        if (text==null){
+        if (text == null) {
             return null;
         }
         String reg = "(((?<=[\\t]\\s)[A-Za-z]+.*[^\\s\\t]+)|([A-Z]).*[^\\t\\s])";
@@ -13,7 +13,8 @@ public class Task10 {
         Matcher matcher = pattern.matcher(text);
         StringBuilder results = new StringBuilder();
         while (matcher.find()) {
-            results.append(matcher.group());}
-    return results.toString();
+            results.append(matcher.group());
+        }
+        return results.toString();
     }
 }

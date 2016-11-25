@@ -8,7 +8,7 @@ public class Task4 {
         int len = s.length();
         if (i < 0) {
             if (Math.abs(i) >= len) {
-                while ( Math.abs(i)> len) {
+                while (Math.abs(i) > len) {
                     i = Math.abs(i) - len;
                 }
             }
@@ -16,7 +16,8 @@ public class Task4 {
         } else {
             if (i >= len) {
                 while (i >= len) {
-                    i -= len;}
+                    i -= len;
+                }
             }
             return String.valueOf(s.charAt(i));
         }

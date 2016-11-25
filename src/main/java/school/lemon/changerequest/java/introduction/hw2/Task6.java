@@ -6,10 +6,10 @@ public class Task6 {
         if (arr == null) {
             return null;
         }
-        int len = arr.length;
-        int revarr[] = new int[len];
-        for (int i = len - 1; i >= 0; i--) {
-            revarr[len - i - 1] = arr[i];
+        int lenngthArr = arr.length;
+        int revarr[] = new int[lenngthArr];
+        for (int i = lenngthArr - 1; i >= 0; i--) {
+            revarr[lenngthArr - i - 1] = arr[i];
         }
         return revarr;
     }
