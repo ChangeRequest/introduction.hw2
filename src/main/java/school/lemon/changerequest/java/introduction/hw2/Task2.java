@@ -9,7 +9,7 @@ public class Task2 {
             return "";
         else
             if (s.length() <= 2) {
-                return s.substring(0);
+                return s;
             }
         return s.substring(0, 2);
     }
