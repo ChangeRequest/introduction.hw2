@@ -3,6 +3,15 @@ package school.lemon.changerequest.java.introduction.hw2;
 
 public class Task6 {
     public static int[] reverse(int[] arr) {
-        return null;
+        if (arr == null) {
+            return null;
+        }
+        int[] a = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            a[i] = arr[arr.length - 1 - i];
+        }
+        {
+            return a;
+        }
     }
 }
