@@ -7,12 +7,11 @@ public class Task6 {
             return null;
         }
         int[] a = new int[arr.length];
-        int i = 0;
-        while (i < arr.length) {
+        for (int i = 0; i < arr.length; i++) {
             a[i] = arr[arr.length - 1 - i];
-            i++;
         }
-
-        return a;
+        {
+            return a;
+        }
     }
 }

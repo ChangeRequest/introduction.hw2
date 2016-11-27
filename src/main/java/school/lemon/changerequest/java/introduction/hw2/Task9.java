@@ -8,7 +8,7 @@ public class Task9 {
         if (URL == null) {
             return new String[]{"", "", ""};
         }
-        Pattern p = Pattern.compile("(?:([a-z]+)://)?([\\da-z._-]+)(?::(\\d+)?)?.*");
+        Pattern p = Pattern.compile("(?:([\\w]+)://)?([\\da-z._-]+)(?::(\\d+)?)?.*");
         Matcher m = p.matcher(URL);
 
         if (m.matches()) {

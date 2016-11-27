@@ -8,12 +8,11 @@ public class Task10 {
         if (text == null) {
             return null;
         }
-        Pattern p = Pattern.compile("(((?:=[\\t]\\s)[a-zA-z]+.*[^\\s\\t]+)|([a-zA-Z]).*[^\\t\\s])");
+        Pattern p = Pattern.compile("([\\S].*[\\S])|([\\S]*[\\S])");
         Matcher m = p.matcher(text);
-        StringBuilder r = new StringBuilder();
-        while (m.find()) {
-            r.append(m.group());
+        if (m.find()) {
+            return m.group();
         }
-        return r.toString();
+        return "";
     }
 }

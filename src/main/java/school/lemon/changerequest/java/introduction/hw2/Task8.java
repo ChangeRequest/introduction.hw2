@@ -7,15 +7,16 @@ public class Task8 {
         }
         int result[] = new int[arr.length];
         int a = 0;
-        int b = 0;
-        for (int Odd : arr) {
-            if (Odd % 2 == 0) {
-                result[a++] = Odd;
+
+        for (int eArr : arr) {
+            if (eArr % 2 == 0) {
+                result[a++] = eArr;
             }
         }
-        for (int Odd : arr) {
-            if (Odd % 2 != 0) {
-                result[a + b++] = Odd;
+        int b = 0;
+        for (int eArr : arr) {
+            if (eArr % 2 != 0) {
+                result[a + b++] = eArr;
             }
         }
         return result;

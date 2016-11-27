@@ -6,7 +6,7 @@ public class Task2 {
     public static String firstTwo(String s) {
 
         if (s == null) return null;
-        else if (s.length() < 2) return s;
+        if (s.length() < 2) return s;
         else {
             return s.substring(0, 2);
         }
