@@ -1,7 +1,5 @@
 package school.lemon.changerequest.java.introduction.hw2;
 
-import com.sun.tools.javac.util.ArrayUtils;
-
 import java.util.Arrays;
 
 public class Task8 {
@@ -10,32 +8,27 @@ public class Task8 {
         int[] newArray1 = new int[arr.length];
         int[] newArray2 = new int[arr.length];
         int count = 0;
-        for (int i = 0, j = 0; i < arr.length; i++, j++) {
+        int count1 = 0;
+
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
-                newArray1[j] = arr[i];
-                count = count + 1;
-            } else newArray2[j] = arr[i];
-        }
-
-        int[] newArray3 = new int[arr.length];
-
-        for (int i = 0; i<newArray3.length; i++) {
-            if (newArray1[i] != 0) {
-
-                //не готово
-                //
-                //
-
-
-
-
+                newArray1[count] = arr[i];
+                count++;
+            } else {
+                newArray2[count1] = arr[i];
+                count1++;
             }
         }
-        return newArray3;
+
+        for (int j = 0, i = count; j < count1; i++, j++) {
+            newArray1[i] = newArray2[j];
+        }
+
+        return newArray1;
     }
 
     public static void main(String[] args) {
-        int[] arr = {-1, 2, -3, 4};
+        int[] arr = {2, 4, 6};
 
         System.out.print(Arrays.toString(evenOdd(arr)));
     }
