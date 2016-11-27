@@ -5,9 +5,21 @@ public class Task4 {
         if (s == null) {
             return null;
         }
-        if (s.length() > i) return Character.toString(s.charAt(0));
-        else if (i > s.length()) return Character.toString(s.charAt(-1));
-        return Task4.charAt(s, i);
+        if (i < 0) {
+            if (Math.abs(i) >= s.length()) {
+                while (Math.abs(i) > s.length()) {
+                    i = Math.abs(i) - s.length();
+                }
+            }
+            return String.valueOf(s.charAt(s.length() - Math.abs(i)));
+        } else {
+            if (i >= s.length()) {
+                while (i >= s.length()) {
+                    i = i - s.length();
+                }
+            }
+            return String.valueOf(s.charAt(i));
+        }
 
     }
 }

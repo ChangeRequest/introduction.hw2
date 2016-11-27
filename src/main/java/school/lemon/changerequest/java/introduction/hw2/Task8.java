@@ -5,16 +5,19 @@ public class Task8 {
         if (arr == null) {
             return null;
         }
-        int lastEven = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
-                int temp = arr[i];
-                arr[i] = arr[lastEven];
-                arr[lastEven] = temp;
-                lastEven++;
+        int result[] = new int[arr.length];
+        int a = 0;
+        int b = 0;
+        for (int Odd : arr) {
+            if (Odd % 2 == 0) {
+                result[a++] = Odd;
             }
-
         }
-        return arr;
+        for (int Odd : arr) {
+            if (Odd % 2 != 0) {
+                result[a + b++] = Odd;
+            }
+        }
+        return result;
     }
 }
