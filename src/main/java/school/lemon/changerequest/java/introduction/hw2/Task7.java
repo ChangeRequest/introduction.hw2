@@ -7,7 +7,7 @@ public class Task7 {
         }
         int n = 0;
         for (int i = arr.length - 1; i >= 0; --i)
-            if (arr[i] % 2 == 0 || arr[i] == 0) {
+            if (arr[i] % 2 == 0) {
                 n++;
             }
         return n;
