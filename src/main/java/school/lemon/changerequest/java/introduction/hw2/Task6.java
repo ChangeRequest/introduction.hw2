@@ -9,10 +9,8 @@ public class Task6 {
             return null;
         }
         int reverseArr[] = new int[arr.length];
-        int n = 0;
-        for (int i = arr.length - 1; i >= 0; --i) {
+        for (int i = arr.length - 1, n=0; i >= 0 && n<arr.length; i--, n++){
             reverseArr[i] = arr[n];
-            n++;
         }
         return reverseArr;
     }
