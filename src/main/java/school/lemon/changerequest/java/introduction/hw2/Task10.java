@@ -8,7 +8,7 @@ public class Task10 {
         if (text == null) {
             return null;
         }
-        String reg = "(((?<=[\\t]\\s)[A-Za-z]+.*[^\\s\\t]+)|([A-Z]).*[^\\t\\s])";
+        String reg = "(((?<=\\s)[A-Za-z0-9]+.*[^\\s]+)|([A-Z0-9]).*[^\\s])";
         Pattern pattern = Pattern.compile(reg);
         Matcher matcher = pattern.matcher(text);
         StringBuilder results = new StringBuilder();

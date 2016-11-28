@@ -10,13 +10,13 @@ public class Task8 {
         int result[] = new int[lengthArr];
         int j = 0;
         for (int i = 0; i < lengthArr; i++) {
-            if (arr[i] % 2 == 0) {
+            if ((arr[i] & 1) == 0) {
                 result[j++] = arr[i];
             }
         }
         int k = 0;
         for (int i = 0; i < lengthArr; i++) {
-            if (arr[i] % 2 != 0) {
+            if ((arr[i] & 1) == 1) {
                 result[j + k++] = arr[i];
             }
         }

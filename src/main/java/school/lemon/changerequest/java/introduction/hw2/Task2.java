@@ -6,11 +6,11 @@ public class Task2 {
 
         if (s == null) {
             return null;
-        } else if (s.length() < 2) {
-            return s;
-        } else {
-            return s.substring(0, 2);
         }
+        if (s.length() <= 2) {
+            return s;
+        }
+        return s.substring(0, 2);
     }
 }
 
