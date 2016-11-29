@@ -4,10 +4,10 @@ package school.lemon.changerequest.java.introduction.hw2;
 public class Task3 {
     public static String comboString(String s1, String s2) {
         if (s1 == null) {
-            return String.valueOf(s1)+s2+String.valueOf(s1);
+            return s1+s2+s1;
                     }
         if (s2 == null) {
-            return String.valueOf(s2)+s1+String.valueOf(s2);
+            return s2+s1+s2;
         }
         int length1 = s1.length();
         int length2 = s2.length();
