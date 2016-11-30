@@ -1,7 +1,7 @@
 package school.lemon.changerequest.java.introduction.hw2;
 
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
+
 
 public class Task6 {
     public static int[] reverse(int[] arr) {
