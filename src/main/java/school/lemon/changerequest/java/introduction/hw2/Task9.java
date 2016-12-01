@@ -11,15 +11,17 @@ public class Task9 {
 
 
 
-String url =" (([\\w]+(?=\\:\\/\\/)) ? (([\\w\\d.-_])+ (?=\\:)) (?=\\:[\\d]+))";
+String url =" ( (?<=\\:\\/\\/) [\\w] +.) ? ((?<= \\/\\/) [\\w\\d.-_] +.) ((?<=\\: ) [\\d] ) ";
         Pattern purl = Pattern.compile(url);
         Matcher murl = purl.matcher(URL);
         StringBuilder surl = new StringBuilder();
-        while (murl.find()){
-        surl.append(murl.group()).append("\n");}
-
+        if (murl.find()){
+           surl.append(murl.group()).append("\n");
         return new String[]{surl.toString()};
+        }
 
+
+        return new String[]{"", "", ""};
 
     }
 }
