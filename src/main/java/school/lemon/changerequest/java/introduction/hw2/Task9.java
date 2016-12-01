@@ -10,18 +10,15 @@ public class Task9 {
         }
 
 
-        String shema = "([a-z]+(?=\\:\\/\\/))";  // for all leters before ://
-        String host = "(([a-z0-9.-_])+ (?=\\:))";  // for all leters , numbers and . -_ before :  (but if url dont have :port ?)
-        String port = "(?=\\:[0-9]+)";  // for all numbers after :
-        Pattern pshema = Pattern.compile(shema);
-        Pattern phost = Pattern.compile(host);
-        Pattern pport = Pattern.compile(port);
-        Matcher mshema = pshema.matcher(URL);
-        Matcher mhost = phost.matcher(URL);
-        Matcher mport = pport.matcher(URL);
 
+String url =" (([\\w]+(?=\\:\\/\\/)) ? (([\\w\\d.-_])+ (?=\\:)) (?=\\:[\\d]+))";
+        Pattern purl = Pattern.compile(url);
+        Matcher murl = purl.matcher(URL);
+        StringBuilder surl = new StringBuilder();
+        while (murl.find()){
+        surl.append(murl.group()).append("\n");}
 
-        return ;
+        return new String[]{surl.toString()};
 
 
     }
