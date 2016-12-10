@@ -9,12 +9,12 @@ public class Task3 {
 
         if (s1.length() > s2.length())
         {
-            StringBuffer newstring = new StringBuffer();
+            StringBuilder newstring = new StringBuilder();
             newstring.append(s2).append(s1).append(s2);
             return newstring.toString();
         }
         else {
-            StringBuffer newstring2 = new StringBuffer();
+            StringBuilder newstring2 = new StringBuilder();
             newstring2.append(s1).append(s2).append(s1);
             return newstring2.toString();
         }
