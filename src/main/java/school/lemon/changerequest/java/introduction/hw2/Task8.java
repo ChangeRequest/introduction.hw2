@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Task8 {
 
     public static int[] evenOdd(int[] arr) {
+        if (arr == null) return null;
         int[] newArray1 = new int[arr.length];
         int[] newArray2 = new int[arr.length];
         int count = 0;

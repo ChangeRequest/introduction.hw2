@@ -5,18 +5,14 @@ import java.util.regex.Pattern;
 
 public class Task10 {
     public static String trim(String text) {
-        if (text == "") {
-            return "";
+        if (text == null) {
+            return null;
         }
-        if (Character.isWhitespace(text.charAt(0))) {
-
-            Pattern pattern = Pattern.compile("[^\\s][\\d\\D]*[$\\s]");
-            Matcher matcher = pattern.matcher(text);
-            if (matcher.find()) {
-                text = matcher.group();
-            }
-        }
-        return text;
+        Pattern pattern = Pattern.compile("\\S(.*)+\\S");
+        Matcher matcher = pattern.matcher(text);
+        if (matcher.find()) {
+            return matcher.group();
+        } else return "";
     }
 
 

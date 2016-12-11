@@ -6,7 +6,7 @@ public class Task3 {
 
         if (s1 == null && s2 == null)
             return null;
-        if (s1.length() < s2.length())
+        if (s1 == null || s2 != null && s1.length() < s2.length())
             return s1 + s2 + s1;
 
         else return s2 + s1 + s2;

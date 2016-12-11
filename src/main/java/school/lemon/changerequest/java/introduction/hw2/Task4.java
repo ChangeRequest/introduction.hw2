@@ -6,11 +6,11 @@ public class Task4 {
         if (s == null) return null;
 
         while (i < 0) {
-            i = i + s.length();
+            i += s.length();
         }
 
         while (i > s.length() - 1) {
-            i = i - s.length();
+            i -= s.length();
         }
 
         return Character.toString(s.charAt(i));

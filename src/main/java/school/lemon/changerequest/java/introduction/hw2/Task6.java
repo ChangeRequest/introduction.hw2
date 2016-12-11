@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Task6 {
     public static int[] reverse(int[] arr) {
+        if (arr == null) return null;
         int[] newArr = new int[arr.length];
 
         for (int i = 0, j = newArr.length - 1; i < arr.length; i++, j--) {
