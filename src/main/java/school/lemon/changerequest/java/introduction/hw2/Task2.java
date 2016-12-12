@@ -13,7 +13,7 @@ public class Task2 {
             return s;
         }
         else {
-            return s.substring(0, 1);
+            return s.substring(0, 2);
         }
     }
 }
