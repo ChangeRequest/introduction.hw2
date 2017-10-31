@@ -1,19 +1,20 @@
 package school.lemon.changerequest.java.introduction.hw2;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Task10 {
     public static String trim(String text) {
 
-        if(text == null)
+        if (text == null)
             return null;
-        String res;
-        int left, right = text.length() - 1;
-        for(left = 0; left<text.length() && Character.isWhitespace(text.charAt(left));left++);
-        if(text.length() == 0 || left == text.length()) {
-            res = "";//"null";
-            return res;
-        }
-        for(right = text.length()-1; Character.isWhitespace(text.charAt(right));right--);
-        res = text.substring(left, right+1);
+        String res = "";
+
+        Pattern p = Pattern.compile("(\\S.*\\S)|(\\S)");
+        Matcher m = p.matcher(text);
+
+        if (m.find())
+            res = m.group();
         return res;
     }
 }

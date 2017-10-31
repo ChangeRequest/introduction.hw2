@@ -8,6 +8,6 @@ public class Task4 {
         i %= s.length();
         if (i < 0)
             i += s.length();
-        return new StringBuffer(1).append(s.charAt(i)).toString();
+        return String.valueOf(s.charAt(i));
     }
 }
