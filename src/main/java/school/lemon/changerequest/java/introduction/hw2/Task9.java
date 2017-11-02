@@ -11,31 +11,13 @@ public class Task9 {
         if (URL == null)
             return result;
 
-
-        Pattern p = Pattern.compile("^[a-zA-Z]+:/|^[a-zA-Z]+//");
+        Pattern p = Pattern.compile("(?:(\\w+)://)?(?:([\\w._\\-]+))?(?::(\\d+))?");
         Matcher m = p.matcher(URL);
 
-        if (m.find())
-            result[0] = m.group().substring(0, m.group().length() - 2);
-
-        StringBuffer tmp;
-        if (result[0].length() == 0)
-            p = Pattern.compile("^[a-zA-Z0-9._-]+[/:]?");//|^[a-zA-Z0-9._-]+");
-        else
-            p = Pattern.compile("/[a-zA-Z0-9._-]+[/:]|/[a-zA-Z0-9._-]+");
-        m = p.matcher(URL);
         if (m.find()) {
-            tmp = new StringBuffer(m.group());
-            p = Pattern.compile("[a-zA-Z0-9._-]+");
-            m = p.matcher(tmp.toString());
-            m.find();
-            result[1] = m.group();
-        }
-
-        p = Pattern.compile(":[0-9]+");
-        m = p.matcher(URL);
-        if (m.find()) {
-            result[2] = m.group().substring(1, m.group().length());
+            for (int i = 0; i < 3; i++)
+                if (m.group(i + 1) != null)
+                    result[i] = m.group(i + 1);
         }
 
         return result;
