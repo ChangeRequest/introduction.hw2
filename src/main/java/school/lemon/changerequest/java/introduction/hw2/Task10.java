@@ -10,11 +10,11 @@ public class Task10 {
             return null;
         String res = "";
 
-        Pattern p = Pattern.compile("(\\S.*\\S)|(\\S)");
+        Pattern p = Pattern.compile("\\s*(\\S?.*\\S)\\s*");
         Matcher m = p.matcher(text);
 
         if (m.find())
-            res = m.group();
+            res = m.group(1);
         return res;
     }
 }
